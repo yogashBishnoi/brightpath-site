@@ -2,95 +2,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>BrightPath - Innovative Solutions</title>
-<style>
-  /* Basic styling */
-  body {
-    font-family: Arial, sans-serif;
-    background: #f0f8ff;
-    color: #333;
-    margin: 0;
-    padding: 0;
-  }
-  header {
-    background: linear-gradient(90deg, #005f75, #00bcd4);
-    padding: 20px;
-    color: white;
-    text-align: center;
-  }
-  nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  .hero {
-    padding: 40px;
-    background: #e0f7fa;
-    text-align: center;
-  }
-  .hero h1 {
-    margin-bottom: 10px;
-  }
-  section {
-    padding: 30px;
-  }
-  footer {
-    background: #005f75;
-    color: white;
-    text-align: center;
-    padding: 15px;
-  }
-  img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-top: 20px;
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BrightPath - Innovative Solutions</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/190/190411.png" type="image/png">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #f5f9fc;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(90deg, #005f75, #00bcd4);
+      padding: 20px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header img {
+      height: 40px;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      padding: 60px 20px;
+      background: #e0f7fa;
+      text-align: center;
+    }
+    .hero button {
+      padding: 10px 20px;
+      background-color: #005f75;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    footer {
+      background: #005f75;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .testimonial, .portfolio, .blog {
+      background: white;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    form input, form textarea {
+      width: 100%;
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    form button {
+      background: #00bcd4;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 8px;
+      margin-top: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+  </style>
 </head>
 <body>
 
 <header>
-  <h1>BrightPath</h1>
+  <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="Logo">
   <nav>
     <a href="#home">Home</a>
     <a href="#about">About</a>
     <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#blog">Blog</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
 
-<div class="hero" id="home">
+<div class="hero" id="home" data-aos="fade-up">
   <h1>Innovating Your Future</h1>
-  <p>Transforming businesses and lives with technology.</p>
+  <p>BrightPath leads you to digital transformation.</p>
+  <button onclick="document.getElementById('contact').scrollIntoView()">Get in Touch</button>
 </div>
 
-<section id="about">
+<section id="about" data-aos="fade-right">
   <h2>About Us</h2>
-  <p>BrightPath is a leader in innovation, providing tech solutions that drive growth and success.</p>
-  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAMAAADzJZcbAAAABlBMVEUAAAD///+l2Z/dAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPAbEQAAAXT4Y6YAAAAASUVORK5CYII=" alt="Innovation Image" />
+  <p>BrightPath is a technology and consulting firm focused on helping businesses harness the power of digital innovation.</p>
 </section>
 
-<section id="services">
+<section id="services" data-aos="fade-left">
   <h2>Our Services</h2>
   <ul>
     <li>Cybersecurity Solutions</li>
-    <li>Software Development</li>
-    <li>Technology Consulting</li>
+    <li>Custom Software Development</li>
+    <li>Strategic IT Consulting</li>
   </ul>
 </section>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:yogashyogash029@gmail.com">yogashyogash029@gmail.com</a></p>
+<section id="portfolio" data-aos="fade-up">
+  <h2>Portfolio</h2>
+  <div class="portfolio">Project Alpha - Cybersecurity for FinTech</div>
+  <div class="portfolio">Project Beta - AI Chatbot for Healthcare</div>
+</section>
+
+<section class="gallery" id="gallery" data-aos="fade-up">
+  <h2>Gallery</h2>
+  <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?fit=crop&w=800&q=80" alt="Innovation">
+</section>
+
+<section id="blog" data-aos="fade-up">
+  <h2>Blog: Today's Innovations</h2>
+  <div class="blog">
+    <p><strong>AI in 2025:</strong> How Generative AI is transforming business productivity and customer service.</p>
+  </div>
+</section>
+
+<section id="testimonials" data-aos="fade-up">
+  <h2>Testimonials</h2>
+  <div class="testimonial">"BrightPath gave our company a tech edge that boosted our efficiency by 40%!" - A. Sharma</div>
+</section>
+
+<section id="contact" data-aos="fade-up">
+  <h2>Contact Us</h2>
+  <form name="contact" netlify>
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
 </section>
 
 <footer>
   &copy; 2025 BrightPath. All rights reserved.
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </body>
 </html>
