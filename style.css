@@ -38,6 +38,18 @@ nav a {
   font-size: 3em;
   margin-bottom: 0.5em;
 }
+#about {
+  background: #ffffff;
+  color: #333;
+}
+#services {
+  background: #e6f2ff;
+  color: #004080;
+}
+#contact {
+  background: #fef6e4;
+  color: #5f4339;
+}
 section {
   padding: 60px 0;
 }
