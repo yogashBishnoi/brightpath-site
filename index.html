@@ -1,1 +1,41 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Home</title></head><body><h1>BrightPath Home</h1></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BrightPath - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-purple-200 via-pink-100 to-yellow-100 min-h-screen flex flex-col">
+  <header class="bg-purple-700 text-white p-4 fixed w-full flex justify-between items-center shadow-lg z-10">
+    <a href="index.html" class="flex items-center space-x-3">
+      <img src="logo.svg" alt="BrightPath Logo" class="h-12 w-12" />
+      <h1 class="text-3xl font-bold">BrightPath</h1>
+    </a>
+    <nav class="hidden md:flex space-x-8 font-semibold">
+      <a href="index.html" class="hover:text-yellow-300">Home</a>
+      <a href="about.html" class="hover:text-yellow-300">About</a>
+      <a href="services.html" class="hover:text-yellow-300">Services</a>
+      <a href="contact.html" class="hover:text-yellow-300">Contact</a>
+    </nav>
+  </header>
+
+  <main class="flex-grow container mx-auto px-6 pt-24 text-center text-purple-900">
+    <h2 class="text-5xl font-extrabold mb-6">Welcome to BrightPath</h2>
+    <p class="max-w-3xl mx-auto mb-8 text-xl leading-relaxed">
+      Empowering Your Digital Journey with Vibrant Solutions.
+    </p>
+    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80" alt="Team working" class="mx-auto rounded-lg shadow-lg max-h-80 mb-10" />
+    <div class="max-w-4xl mx-auto aspect-video rounded-lg overflow-hidden shadow-lg mb-10">
+      <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="BrightPath Intro" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <a href="services.html" class="inline-block bg-purple-800 hover:bg-purple-900 text-white font-semibold px-10 py-4 rounded-lg shadow-lg transition">
+      Explore Services
+    </a>
+  </main>
+
+  <footer class="bg-purple-700 text-purple-200 text-center py-6 mt-auto">
+    &copy; 2025 BrightPath. All rights reserved.
+  </footer>
+</body>
+</html>
