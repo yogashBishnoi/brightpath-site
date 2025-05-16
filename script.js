@@ -1,0 +1,1 @@
+// JS for animations and language toggle
